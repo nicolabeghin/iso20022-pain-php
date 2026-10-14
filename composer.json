@@ -1,0 +1,36 @@
+{
+    "name": "nicolabeghin/iso20022-pain-php",
+    "description": "Generate ISO 20022 Payments Initiation (pain.001) XML credit transfers, including the Italian CBI CBIPaymentRequest 00.04.01 profile. PHP port of bank4j.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["iso20022", "pain.001", "sepa", "sct", "cbi", "credit-transfer", "xml", "iban", "bic"],
+    "authors": [
+        {"name": "Nicola Beghin"}
+    ],
+    "require": {
+        "php": ">=8.2",
+        "ext-dom": "*",
+        "ext-libxml": "*",
+        "ext-xmlwriter": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpstan/phpstan": "^1.11",
+        "squizlabs/php_codesniffer": "^3.10"
+    },
+    "suggest": {
+        "ext-intl": "Better transliteration of non-Latin characters in CbiCharset"
+    },
+    "autoload": {
+        "psr-4": {"Iso20022\\Pain\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Iso20022\\Pain\\Test\\": "tests/"}
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
