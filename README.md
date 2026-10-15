@@ -1,5 +1,7 @@
 # iso20022-pain-php
 
+[![Tests](https://github.com/nicolabeghin/iso20022-pain-php/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/nicolabeghin/iso20022-pain-php/actions/workflows/tests.yml)
+
 Generate **ISO 20022 Payments Initiation** (`pain.001`) XML credit transfers in PHP, including the
 **Italian CBI `CBIPaymentRequest` 00.04.01** profile used to upload "distinte di bonifico" (SEPA and
 FAST/instant transfers) to Italian corporate-banking portals.
